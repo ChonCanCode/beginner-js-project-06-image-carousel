@@ -1,0 +1,88 @@
+body{
+    overflow-y: hidden;
+}
+
+.image{
+    display: none;
+}
+
+.container {
+  border: 1px solid black;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin: auto;
+}
+
+#prev {
+    position: absolute;
+    color: white;
+    background-color: black;
+    top: 43%;
+    left: 0;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    translate: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+#next {
+    position: absolute;
+    color: white;
+    background-color: black;
+    top: 43%;
+    right: 0;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    translate: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#prev:hover, #next:hover {
+    background-color: rgb(165, 165, 165);
+}
+
+.dots {
+    text-align: center;
+    margin: 2%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #000000;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0;
+    transition: background-color 0.6s ease;
+}
+
+.active{
+    background-color: gray;
+}
+
+.fade{
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}

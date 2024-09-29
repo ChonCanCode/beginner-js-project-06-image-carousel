@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/84cc6cb317.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Image Carousel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image fade">
+            <img src="img/01.JPG" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="img/02.JPG" alt="img02" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="img/03.JPG" alt="img03" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="img/04.JPG" alt="img04" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="img/05.JPG" alt="img05" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="img/06.JPG" alt="img06" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="img/07.JPG" alt="img07" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="img/08.JPG" alt="img08" width="100%">
+        </div>
+        
+        <i id="prev" onclick="show_image(-1)" class="fa-solid fa-chevron-left"></i>
+        <i id="next" onclick="show_image(1)"class="fa-solid fa-chevron-right"></i>
+
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
