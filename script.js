@@ -1,18 +1,13 @@
 let index = 0;
 
-// function show_image(num) {
-//     index += num
-// }
-
 show_image(index);
 
 function show_image(i) {
     index += i
 
     let images = document.getElementsByClassName("image");
-    //now we created an array of images
 
-    let dots = document.getElementsByClassName("dots");
+    let dots = document.getElementsByClassName("dot");
 
     for(i = 0; i < images.length; i++)
         images[i].style.display = "none";

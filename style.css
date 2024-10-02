@@ -1,5 +1,7 @@
+
 body{
     overflow-y: hidden;
+    background: rgb(1, 120, 101);
 }
 
 .image{
@@ -7,7 +9,6 @@ body{
 }
 
 .container {
-  border: 1px solid black;
     width: 70%;
     height: 100vh;
     display: flex;
