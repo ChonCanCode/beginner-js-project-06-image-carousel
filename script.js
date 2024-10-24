@@ -22,5 +22,9 @@ function show_image(i) {
         index = images.length - 1;
 
     images[index].style.display = "block";
-    dots[index].className += " active"
+    dots[index].className = " active"
 }
+        From
+<span class="dot"></span>
+        TO
+<span class=" active"></span>
